@@ -1,1 +1,18 @@
-{{size}} {{animal}}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Example</title>
+</head>
+<body>
+  {% if session %}
+    <p><a href={{inviteLink}}>{{inviteLink}}</a></p>  
+    <div><pre>{{userSession}}</pre></div>
+    <div><pre>{{demoResult}}</pre></div>
+    <div><pre>{{appResult}}</pre></div>
+    <div><pre>{{statusIdp}}</pre></div>
+  {% else %}
+    <h1>Login</h1>
+    <p><a href="/login">Login</a></p>
+  {% endif %}
+</body>
+</html>
